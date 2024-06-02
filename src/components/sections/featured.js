@@ -124,7 +124,7 @@ const StyledProject = styled.li`
   }
 
   .project-title {
-    color: var(--lightest-slate);
+    color: var(--dark-slate);
     font-size: clamp(24px, 5vw, 28px);
 
     @media (min-width: 768px) {
@@ -186,16 +186,25 @@ const StyledProject = styled.li`
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
-    margin: 25px 0 10px;
     padding: 0;
+    margin: 25px 0 10px;
     list-style: none;
 
     li {
+      border: 1px solid var(--light-navy);
+      padding: 5px 10px;
       margin: 0 20px 5px 0;
-      color: var(--light-slate);
+      color: var(--light-navy);
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
       white-space: nowrap;
+    }
+
+    li:hover {
+      color: #fff;
+      background-color: var(--green);
+      border-color: var(--green);
+      transition: var(--transition);
     }
 
     @media (max-width: 768px) {
@@ -203,7 +212,7 @@ const StyledProject = styled.li`
 
       li {
         margin: 0 10px 5px 0;
-        color: var(--lightest-slate);
+        color: var(--dark-slate);
       }
     }
   }
@@ -214,7 +223,7 @@ const StyledProject = styled.li`
     position: relative;
     margin-top: 10px;
     margin-left: -10px;
-    color: var(--lightest-slate);
+    color: var(--dark-slate);
 
     a {
       ${({ theme }) => theme.mixins.flexCenter};
@@ -290,14 +299,14 @@ const StyledProject = styled.li`
 
     .img {
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1) brightness(90%);
+      // mix-blend-mode: multiply;
+      // filter: grayscale(100%) contrast(1) brightness(90%);
 
       @media (max-width: 768px) {
         object-fit: cover;
         width: auto;
         height: 100%;
-        filter: grayscale(100%) contrast(1) brightness(50%);
+        // filter: grayscale(100%) contrast(1) brightness(50%);
       }
     }
   }

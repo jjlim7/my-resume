@@ -81,8 +81,8 @@ const StyledPic = styled.div`
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
+      mix-blend-mode: normal;
+      // filter: grayscale(100%) contrast(1);
       transition: var(--transition);
     }
 
@@ -100,12 +100,12 @@ const StyledPic = styled.div`
     &:before {
       top: 0;
       left: 0;
-      background-color: var(--navy);
+      background-color: var(--bg);
       mix-blend-mode: screen;
     }
 
     &:after {
-      border: 2px solid var(--green);
+      border: 2px solid var(--dark-slate);
       top: 14px;
       left: 14px;
       z-index: -1;
@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['Python', 'Golang', 'JavaScript (ES6+)', 'TypeScript', 'Node.js', 'Vue.js'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -134,31 +134,23 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
+            <p>Hello! My name is Jj and I enjoy creating things!</p>
+
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              As a versatile Software Engineer and Data Engineer with over 3 years of professional
+              experience, I specialize in designing and building scalable, data-intensive systems
+              and infrastructures. My technical expertise spans cloud computing, software
+              engineering, and data engineering, equipping me with a robust skill set to tackle
+              complex challenges and deliver impactful solutions.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
-            </p>
-
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              I recently co-created a &nbsp;
+              <a href="https://github.com/4467b8e0dcfefa694d5d815af201f695/uniexplorers-public">
+                University Exchange platform
+              </a>
+              , empowering students to navigate through diverse exchange programs and engage in
+              discussions through a tailored social network.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
@@ -173,7 +165,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/me.jpeg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

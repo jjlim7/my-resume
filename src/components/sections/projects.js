@@ -116,7 +116,7 @@ const StyledProject = styled.li`
 
   .project-title {
     margin: 0 0 10px;
-    color: var(--lightest-slate);
+    color: var(--dark-slate);
     font-size: var(--fz-xxl);
 
     a {
