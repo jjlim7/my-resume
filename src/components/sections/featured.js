@@ -158,6 +158,7 @@ const StyledProject = styled.li`
     padding: 25px;
     border-radius: var(--border-radius);
     background-color: var(--light-navy);
+    opacity: 90%;
     color: var(--light-slate);
     font-size: var(--fz-lg);
 
@@ -374,7 +375,9 @@ const Featured = () => {
                     <p className="project-overline">Featured Project</p>
 
                     <h3 className="project-title">
-                      <a href={external}>{title}</a>
+                      <a href={external} target="_blank" rel="noreferrer">
+                        {title}
+                      </a>
                     </h3>
 
                     <div
@@ -397,12 +400,16 @@ const Featured = () => {
                         </a>
                       )}
                       {github && (
-                        <a href={github} aria-label="GitHub Link">
+                        <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
                           <Icon name="GitHub" />
                         </a>
                       )}
                       {external && !cta && (
-                        <a href={external} aria-label="External Link" className="external">
+                        <a
+                          href={external}
+                          aria-label="External Link"
+                          target="_blank"
+                          className="external" rel="noreferrer">
                           <Icon name="External" />
                         </a>
                       )}
