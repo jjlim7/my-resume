@@ -146,7 +146,7 @@ const About = () => {
 
             <p>
               I recently co-created a &nbsp;
-              <a href="https://github.com/4467b8e0dcfefa694d5d815af201f695/uniexplorers-public">
+              <a href="#projects">
                 University Exchange platform
               </a>
               , empowering students to navigate through diverse exchange programs and engage in
