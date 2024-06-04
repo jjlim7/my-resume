@@ -103,8 +103,8 @@ const Footer = () => {
             ))}
         </ul>
       </StyledSocialLinks>
-
-      {/* <StyledCredit tabindex="-1">
+    </StyledFooter>
+    /* <StyledCredit tabindex="-1">
         <a href="https://github.com/jjlim7/v4">
           <div>Designed &amp; Built by Brittany Chiang</div>
 
@@ -121,8 +121,7 @@ const Footer = () => {
             </div>
           )}
         </a>
-      </StyledCredit> */}
-    </StyledFooter>
+      </StyledCredit> */
   );
 };
 
