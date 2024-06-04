@@ -72,6 +72,7 @@ const StyledProject = styled.li`
     padding: 2rem 1.75rem;
     border-radius: var(--border-radius);
     background-color: var(--light-navy);
+    opacity: 90%;
     transition: var(--transition);
     overflow: auto;
   }
@@ -302,11 +303,11 @@ const Projects = () => {
         )}
       </ul>
 
-      {/* <button className="more-button" onClick={() => setShowMore(!showMore)}>
-        Show {showMore ? 'Less' : 'More'}
-      </button> */}
     </StyledProjectsSection>
   );
+  /* <button className="more-button" onClick={() => setShowMore(!showMore)}>
+        Show {showMore ? 'Less' : 'More'}
+      </button> */
 };
 
 export default Projects;
