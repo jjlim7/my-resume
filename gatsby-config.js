@@ -1,10 +1,12 @@
 const config = require('./src/config');
 
 module.exports = {
+  flags: {
+    DEV_SSR: true,
+  },
   siteMetadata: {
     title: 'Jing Jie',
-    description:
-      '',
+    description: '',
     siteUrl: 'https://jjlim7.tech', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@jjlim7',
