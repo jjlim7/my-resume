@@ -68,7 +68,7 @@ const Hero = () => {
         I’m a software engineer specializing in building (and occasionally designing) exceptional
         digital experiences. Currently, I’m focused on building robust data pipelines for
         streamlined supply chain operations at{' '}
-        <a href="https://secretlab.sg/pages/about-us" target="_blank" rel="noreferrer">
+        <a href="#jobs" rel="noreferrer">
           Secretlab
         </a>
         .
