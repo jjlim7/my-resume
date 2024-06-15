@@ -192,8 +192,9 @@ const StyledProject = styled.li`
     list-style: none;
 
     li {
+      background-color: var(--bg);
       border: 1px solid var(--light-navy);
-      padding: 5px 10px;
+      padding: 0.5em 1em;
       margin: 0 20px 5px 0;
       color: var(--light-navy);
       font-family: var(--font-mono);
@@ -409,7 +410,8 @@ const Featured = () => {
                           href={external}
                           aria-label="External Link"
                           target="_blank"
-                          className="external" rel="noreferrer">
+                          className="external"
+                          rel="noreferrer">
                           <Icon name="External" />
                         </a>
                       )}
