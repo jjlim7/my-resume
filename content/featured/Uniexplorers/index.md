@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '1'
 title: 'Uniexplorers'
 cover: './demo.png'
 github: 'https://github.com/4467b8e0dcfefa694d5d815af201f695/uniexplorers-public'
@@ -9,6 +9,7 @@ tech:
   - Node.js
   - gRPC
   - Websocket
+  - RabbitMQ
   - Kubernetes
 ---
 
