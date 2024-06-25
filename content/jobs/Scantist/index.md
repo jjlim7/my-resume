@@ -7,7 +7,7 @@ range: 'June 2021 - May 2023'
 url: 'https://www.scantist.com/'
 ---
 
-- Revamped data architecture to process semi-structured data through GCP Dataproc using Spark, Airflow, and Python, generating a 200% increase in production workload.
+- Architected and implemented a scalable data processing pipeline using GCP Dataproc, Spark, Airflow, and Python, generating a 200% increase in transaction throughput.
 - Automated ETL and web scraping processes across more than 100 million raw data records, saving up to 8 hours of manual workload daily.
 - Implemented extensive unit tests using pytest to increase test coverage by 20%, significantly enhancing data quality and accuracy.
 - Built robust operational monitoring tools using Prometheus/Grafana and ensured 99.99% uptime of critical business services.
