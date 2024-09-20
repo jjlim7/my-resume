@@ -3,7 +3,7 @@ date: '2023-08-14'
 title: 'Data Engineer'
 company: 'Secretlab'
 location: 'Singapore'
-range: 'August 2023 - Present'
+range: 'August 2023 - September 2024'
 url: 'https://www.secretlab.sg/'
 ---
 
