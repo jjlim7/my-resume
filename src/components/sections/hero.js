@@ -44,6 +44,10 @@ const StyledHeroSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
+  .work-link {
+    ${({ theme }) => theme.mixins.bigButton};
+    margin-top: 24px;
+  }
 `;
 
 const Hero = () => {
@@ -61,18 +65,22 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Jing Jie (Jj).</h2>;
-  const three = <h3 className="big-heading">I drive digital transformations.</h3>;
+  const three = (
+    <h3 className="big-heading">
+      I build data-driven systems behind products people use and trust.
+    </h3>
+  );
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building robust data pipelines for
-        streamlined supply chain operations at{' '}
-        <a href="#jobs" rel="noreferrer">
-          Secretlab
-        </a>
-        .
+        I'm a software engineer who finds joy in turning complexity into clarity — whether it’s
+        building big data pipelines for millions of Binance Square users or engineering robust rule
+        engines to power decision-making at Millennium. I love crafting backend systems that don’t
+        just scale — but bring real products to life.
       </p>
+      <a className="work-link" href="#jobs">
+        Learn More About My Work
+      </a>
     </>
   );
   // const five = (
